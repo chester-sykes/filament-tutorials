@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Admin\Resources\UserResource\Pages;
+namespace App\Filament\Admin\Resources\PostResource\Pages;
 
-use App\Filament\Admin\Resources\UserResource;
+use App\Filament\Admin\Resources\PostResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ManageRecords;
 
-class ManageUsers extends ManageRecords
+class ManagePosts extends ManageRecords
 {
-    protected static string $resource = UserResource::class;
+    protected static string $resource = PostResource::class;
 
     protected function getHeaderActions(): array
     {

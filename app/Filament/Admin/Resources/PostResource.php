@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Filament\Customer\Resources;
+namespace App\Filament\Admin\Resources;
 
-use App\Filament\Customer\Resources\UserResource\Pages;
-use App\Filament\Customer\Resources\UserResource\RelationManagers;
-use App\Models\User;
+use App\Filament\Admin\Resources\PostResource\Pages;
+use App\Filament\Admin\Resources\PostResource\RelationManagers;
+use App\Models\Post;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,9 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class UserResource extends Resource
+class PostResource extends Resource
 {
-    protected static ?string $model = User::class;
+    protected static ?string $model = Post::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -50,7 +50,7 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ManageUsers::route('/'),
+            'index' => Pages\ManagePosts::route('/'),
         ];
     }
 }
