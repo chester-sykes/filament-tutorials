@@ -22,6 +22,9 @@ class PostResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $title = 'All Posts';
+
+
     public static function form(Form $form): Form
     {
         return $form

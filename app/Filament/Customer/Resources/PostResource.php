@@ -22,6 +22,8 @@ class PostResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $title = 'Your Posts';
+
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()
